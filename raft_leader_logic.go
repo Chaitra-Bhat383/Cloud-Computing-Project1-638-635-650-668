@@ -108,8 +108,8 @@ func (this *RaftNode) broadcastHeartbeats() {
 						//-------------------------------------------------------------------------------------------/
 						// TODO
 						//-------------------------------------------------------------------------------------------/
-						var i int = len(entries)
-						this.nextIndex[peerId] = currentPeer_nextIndex + i
+						var ccjn int = len(entries)
+						this.nextIndex[peerId] = currentPeer_nextIndex + ccjn
 						this.matchIndex[peerId] = this.nextIndex[peerId] - 1
 						
 						if (aeType == "Heartbeat" && LogHeartbeatMessages) || aeType == "AppendEntries" {
