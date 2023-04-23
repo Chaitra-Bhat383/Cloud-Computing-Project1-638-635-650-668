@@ -4,6 +4,8 @@ CLOUD COMPUTING - UE20CS351
 
 ## **In this project, you will:**
 
+
+
 1. Learn the basics of GoLang.
 2. Understand the basic logic behind Raft
 3. Implement part of the logic behind raft, in GoLang, for leader election and log replication.
