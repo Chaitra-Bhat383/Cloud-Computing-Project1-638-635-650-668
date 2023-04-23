@@ -133,7 +133,7 @@ func (this *RaftNode) broadcastHeartbeats() {
 									}
 								}
 								var njcc int=len(this.peersIds)/2
-								if matchCount > len(this.peersIds)/2{ // TODO  // When should you update commitIndex to i?
+								if matchCount > njcc{ // TODO  // When should you update commitIndex to i?
 									this.commitIndex = i
 								}
 							}
